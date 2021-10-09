@@ -1,0 +1,144 @@
+/* purgecss start ignore */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+/* purgecss end ignore */
+@import 'tailwindcss/utilities';
+
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/CalibreWeb-Regular.eot'),
+    url('../fonts/CalibreWeb-Regular.woff') format('woff'),
+    url('../fonts/CalibreWeb-Regular.woff2') format('woff2');
+  font-weight: normal;
+}
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/CalibreWeb-Bold.eot'),
+    url('../fonts/CalibreWeb-Bold.woff') format('woff'),
+    url('../fonts/CalibreWeb-Bold.woff2') format('woff2');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Calibre';
+  src: url('../fonts/CalibreWeb-Semibold.eot'),
+    url('../fonts/CalibreWeb-Semibold.woff') format('woff'),
+    url('../fonts/CalibreWeb-Semibold.woff2') format('woff2');
+  font-weight: 600;
+}
+
+h1 {
+  @apply text-xl font-semibold;
+}
+h2 {
+  @apply text-xl font-semibold;
+}
+h3 {
+  @apply text-lg font-semibold leading-tight;
+}
+
+@screen lg {
+  h1 {
+    @apply text-3xl;
+  }
+  h2 {
+    @apply text-2xl;
+  }
+}
+/* purgecss start ignore */
+.dark-mode {
+  --color-bg-primary: #f28017;
+  --color-bg-primary-hover: #d66600;
+  --color-bg-secondary: #33353a;
+  --color-bg-default: #1d1e24;
+  --color-bg-inverse: #000000;
+  --color-bg-background: #2b2c32;
+  --color-bg-border: #000000;
+
+  --color-text-primary: #f28017;
+  --color-text-primary-hover: #d66600;
+  --color-text-secondary: #44467b;
+  --color-text-default: #ffffff;
+  --color-text-default-soft: #8f9092;
+  --color-text-inverse: #fff;
+  --color-text-inverse-soft: rgba(255, 255, 255, 0.7);
+}
+
+.light-mode {
+  --color-bg-primary: #f28017;
+  --color-bg-primary-hover: #d66600;
+  --color-bg-secondary: #ffffff;
+  --color-bg-default: #eaeaea;
+  --color-bg-inverse: #ffffff;
+  --color-bg-background: #f0f0f0;
+  --color-bg-border: #dcdcdc;
+
+  --color-text-primary: #f28017;
+  --color-text-primary-hover: #d66600;
+  --color-text-secondary: #44467b;
+  --color-text-default: #202020;
+  --color-text-default-soft: #6f6f6f;
+  --color-text-inverse: #fff;
+  --color-text-inverse-soft: rgba(255, 255, 255, 0.7);
+}
+
+.sepia-mode {
+  --color-bg-primary: #f28017;
+  --color-bg-primary-hover: #d66600;
+  --color-bg-secondary: #eae0c9;
+  --color-bg-default: #ded0bf;
+  --color-bg-inverse: #eae0c9;
+  --color-bg-background: #f1e7d0;
+  --color-bg-border: #cfc4b5;
+
+  --color-text-primary: #504231;
+  --color-text-primary-hover: #504231;
+  --color-text-secondary: #504231;
+  --color-text-default: #433422;
+  --color-text-default-soft: #746554;
+  --color-text-inverse: #fff;
+  --color-text-inverse-soft: rgba(255, 255, 255, 0.7);
+}
+
+.vapor-mode {
+  --color-bg-primary: #ac0e5b;
+  --color-bg-primary-hover: #8b0e4b;
+  --color-bg-secondary: #2f0c43;
+  --color-bg-default: #35094e;
+  --color-bg-inverse: #481367;
+  --color-bg-background: #24043a;
+  --color-bg-border: #7c1db3;
+  --color-text-primary: #a646de;
+  --color-text-primary-hover: #d66600;
+  --color-text-secondary: #44467b;
+  --color-text-default: #f41ca3;
+  --color-text-default-soft: #b078f3;
+  --color-text-inverse: #fff;
+  --color-text-inverse-soft: hsla(0, 0%, 100%, 0.7);
+}
+.vapor-mode body {
+  font-family: 'Dank Mono', 'monospace';
+  text-shadow: 0 0 10px #6224af, 0 0 1px #6224af, 0 0 2px #e60073,
+    0 0 10px #e60073, 0 0 2px #e60073, 0 0 30px #e60073, 0 0 40px #e60073;
+}
+
+/* purgecss end ignore */
+
+/* width */
+::-webkit-scrollbar {
+  @apply w-2 h-1;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  @apply bg-secondary;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  @apply bg-default;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-border;
+}
